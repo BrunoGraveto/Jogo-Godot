@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://jh6e6oxdxpb7"]
+
+[node name="ObjectTemplate" type="StaticBody2D" groups=["hazard"]]
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+
+[node name="DetectionCollision" type="Area2D" parent="Collision"]
+
+[node name="Collision" type="CollisionShape2D" parent="Collision/DetectionCollision"]
+
+[node name="Texture" type="Sprite2D" parent="."]
+
+[node name="Animation" type="AnimationPlayer" parent="."]
